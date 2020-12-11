@@ -3,69 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Üvegsztori</title>
     <link rel="stylesheet" href="libs/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="libs/js/main.js"></script>
 </head>
 <body>
 
 <div class="wrapper">
-    <header>
-        <div class="nav-btn">
-            <div class="nav-btn-icon">
-                <span></span>
-                <span></span>
-                <span></span>
+    <div class="site-darken"></div>
+    <nav>
+        <ul>
+            <li class="nav-close-btn">X</li>
+            <li><a href="index.php">kezdőlap</a></li>
+            <li><a href="egyedi_megrendeles.php">egyedi megrendelés</a></li>
+            <li><a href="elkeszitesi_hatarido.php">elkészítési határidő</a></li>
+            <li><a href="garancia.php">garancia</a></li>
+            <li><a href="szallitas.php">szállítás</a></li>
+            <li><a href="blog.php">blog</a></li>
+            <li><a href="fiokom.php">fiókom</a></li>
+            <li><a href="kapcsolat.php">kapcsolat</a></li>
+        </ul>
+    </nav>
+    <div class="categories-menu">
+        <ul>
+            <li class="categories-close-btn">X</li>
+            <li><a href="#">Regényeim</a></li>
+            <li><a href="#">Lámpák</a></li>
+            <li>Üvegékszerek
+                <ul>
+                    <li><a href="#">Fülbevaló</a></li>
+                    <li><a href="#">Gyűrű</a></li>
+                    <li><a href="#">Karkőtő</a></li>
+                    <li><a href="#">Medál</a></li>
+                </ul>
+            </li>
+            <li>Kollekciók
+                <ul>
+                    <li><a href="#">Arany emlékezet kollekció</a></li>
+                    <li><a href="#">Kék emlékezet</a></li>
+                    <li><a href="#">Narancsivárág kollekció</a></li>
+                    <li><a href="#">Hipnotikus mályva kollekció</a></li>
+                    <li><a href="#">Ezüst emlékezet kollekció</a></li>
+                </ul>
+            </li>
+            <li>Elkészítési idő
+                <ul>
+                    <li><a href="#">Azonnal elvihető</a></li>
+                    <li><a href="#">Három nap</a></li>
+                    <li><a href="#">Egy hét</a></li>
+                    <li><a href="#">Két hét</a></li>
+                </ul>
+            </li>
+            <li>Színek
+                <ul>
+                    <li><a href="#">Arany</a></li>
+                    <li><a href="#">Türkiz</a></li>
+                    <li><a href="#">Narancs</a></li>
+                    <li><a href="#">Átlátszó</a></li>
+                    <li><a href="#">Csillogó</a></li>
+                    <li><a href="#">Fehér</a></li>
+                    <li><a href="#">Fekete</a></li>
+                    <li><a href="#">Kék</a></li>
+                    <li><a href="#">Mályva</a></li>
+                    <li><a href="#">Piros</a></li>
+                    <li><a href="#">Rózsaszín</a></li>
+                    <li><a href="#">Színváltó</a></li>
+                    <li><a href="#">Zöld</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="header-wrapper">
+        <header>
+            <div class="nav-btn">
+                <div class="nav-btn-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-btn-text">menü</div>
             </div>
-            <div class="nav-btn-text">menü</div>
-        </div>
-        <div class="header-logo">
-            <a href="index.php"><img src="./img/logo.jpg" alt="logo"></a>
-        </div>
-        <div class="header-icons">
-            <div class="header-search">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3. org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 512.005 512.005" style="enable-background:new 0 0 512.005 512.005;" xml:space="preserve">
-                    <g>
-                        <g>
-                            <path d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
-                                S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
-                                c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
-                                M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"/>
-                        </g>
-                    </g>
-                </svg>
+            <div class="header-logo">
+                <a href="index.php"><img src="./img/logo-head.jpg" alt="logo"></a>
             </div>
-            <div class="header-login">
-                <svg height="490pt" viewBox="0 -10 490.66667 490" width="490pt" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m325.332031 251h-309.332031c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h309.332031c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m240 336.332031c-4.097656 0-8.191406-1.554687-11.308594-4.691406-6.25-6.25-6.25-16.382813 0-22.636719l74.027344-74.023437-74.027344-74.027344c-6.25-6.25-6.25-16.386719 0-22.636719 6.253906-6.25 16.386719-6.25 22.636719 0l85.332031 85.335938c6.25 6.25 6.25 16.382812 0 22.632812l-85.332031 85.332032c-3.136719 3.160156-7.230469 4.714843-11.328125 4.714843zm0 0"/><path d="m256 469.667969c-97.089844 0-182.804688-58.410157-218.410156-148.824219-3.242188-8.191406.808594-17.492188 9.023437-20.734375 8.191407-3.199219 17.515625.789063 20.757813 9.046875 30.742187 78.058594 104.789062 128.511719 188.628906 128.511719 111.742188 0 202.667969-90.925781 202.667969-202.667969s-90.925781-202.667969-202.667969-202.667969c-83.839844 0-157.886719 50.453125-188.628906 128.511719-3.265625 8.257812-12.566406 12.246094-20.757813 9.046875-8.214843-3.242187-12.265625-12.542969-9.023437-20.734375 35.605468-90.414062 121.320312-148.824219 218.410156-148.824219 129.386719 0 234.667969 105.28125 234.667969 234.667969s-105.28125 234.667969-234.667969 234.667969zm0 0"/>
-                </svg>
+            <div class="categories-btn">
+                <div class="nav-btn-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-btn-text">kategóriák</div>
             </div>
-            <div class="header-cart">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                        <g>
-                            <g>
-                                <path d="M467.952,427.383l-25.3-245.673c-1.045-10.187-9.627-17.93-19.867-17.93h-332.9c-10.213,0-18.789,7.717-19.861,17.877
-                                    L44.044,427.45c-2.144,21.452,5.007,43.011,19.614,59.156C78.266,502.739,98.986,512,120.511,512h271.653
-                                    c21.425,0,41.952-9.075,56.293-24.914C462.999,471.06,470.103,449.328,467.952,427.383z M418.876,460.261
-                                    c-6.898,7.603-16.385,11.791-26.712,11.791H120.518c-10.26,0-20.187-4.468-27.238-12.257c-7.051-7.79-10.506-18.13-9.494-28.257
-                                    l24.075-227.803h296.9l23.449,227.657C429.276,442.198,425.953,452.451,418.876,460.261z"/>
-                            </g>
-                        </g>
-                        <g>
-                            <g>
-                                <path d="M259.663,0c-63.144,0-114.518,51.373-114.518,114.518v69.243h39.948v-69.243c0-41.12,33.45-74.57,74.57-74.57
-                                    c41.12,0,74.576,33.45,74.576,74.57v69.243h39.941v-69.243C374.181,51.373,322.808,0,259.663,0z"/>
-                            </g>
-                        </g>
-                </svg>
-                <span class="header-cart-quantity">10</span>
-            </div>
-        </div>
-    </header>
-</div>
+        </header>
+    </div>
+
 
 
     
